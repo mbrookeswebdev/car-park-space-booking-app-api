@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-
 use App\CarPark;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -58,7 +57,7 @@ class CarParksController extends Controller
         if (count($carparks) > 0) {
             return response($carparks);
         } else {
-            return response('', response::HTTP_BAD_REQUEST);
+            return response('', response::HTTP_NOT_FOUND);
         }
     }
 }

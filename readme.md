@@ -1,2 +1,2 @@
-## API for Park & Go
+## Basic API for Park & Go
 
